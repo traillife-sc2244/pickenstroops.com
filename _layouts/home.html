@@ -2,14 +2,27 @@
 layout: base
 ---
 
+{% capture announcement_content %}{% include_relative announcement.md %}{% endcapture %}
+{% if announcement_content contains '#' %}
+<div class="announcement-section">
+    <div class="announcement-container">
+        <div class="announcement-header">
+            <h2><i class="fas fa-bullhorn"></i> Announcements</h2>
+        </div>
+        <div class="announcement-content">
+            {{ announcement_content | remove: '---' | remove: 'layout: null' | markdownify }}
+        </div>
+    </div>
+</div>
+{% endif %}
+
 <div class="hero-container">
     <!-- Left side - Trail Life USA -->
     <div class="hero-section trail-life" onclick="window.open('https://traillifesc2244.com', '_blank')">
         <div class="hero-content">
             <div class="hero-logo">
-                <i class="fas fa-mountain"></i>
+                <img src="{{ '/assets/images/traillife_logo.crop.png' | relative_url }}" alt="Trail Life USA Logo" class="hero-logo-img">
             </div>
-            <h1>Trail Life USA</h1>
             <h2>Troop SC-2244</h2>
             <h3>1st, 2nd, &amp; 3rd Thursdays</h3>
             <br />
@@ -26,9 +39,8 @@ layout: base
     <div class="hero-section ahg" onclick="window.open('https://ahg4224.com', '_blank')">
         <div class="hero-content">
             <div class="hero-logo">
-                <i class="fas fa-star"></i>
+                <img src="{{ '/assets/images/ahg_logo.white.png' | relative_url }}" alt="American Heritage Girls Logo" class="hero-logo-img">
             </div>
-            <h1>American Heritage Girls</h1>
             <h2>Troop SC-4224</h2>
             <h3>1st and 3rd Thursdays</h3>
             <br />
@@ -49,7 +61,7 @@ layout: base
             <h2>Welcome to Pickens Troops</h2>
             <p>Connecting families to exceptional youth programs in Pickens County, South Carolina</p>
         </div>
-        
+
         <div class="info-grid">
             <div class="info-card">
                 <div class="info-icon">
@@ -58,7 +70,7 @@ layout: base
                 <h3>Meeting Times</h3>
                 <p>Both troops meet Thursdays at 6:15 PM</p>
             </div>
-            
+
             <div class="info-card">
                 <div class="info-icon">
                     <i class="fas fa-map-marker-alt"></i>
@@ -69,7 +81,7 @@ layout: base
                     <i class="fas fa-external-link-alt"></i> View on Google Maps
                 </a>
             </div>
-            
+
             <div class="info-card">
                 <div class="info-icon">
                     <i class="fas fa-users"></i>
@@ -77,7 +89,7 @@ layout: base
                 <h3>Family Friendly</h3>
                 <p>Convenient for families with both boys and girls</p>
             </div>
-            
+
             <div class="info-card">
                 <div class="info-icon">
                     <i class="fas fa-heart"></i>
@@ -86,9 +98,9 @@ layout: base
                 <p>Character development, leadership, and faith-based</p>
             </div>
         </div>
-        
+
         <div class="info-cta">
             <p><strong>Ready to join?</strong> Click on either program above to learn more and get started!</p>
         </div>
     </div>
-</div> 
+</div>
