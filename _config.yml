@@ -1,0 +1,57 @@
+title: Pickens Troops
+description: >- 
+  Welcome to Pickens Troops - connecting you to Trail Life USA Troop SC-2244 and American Heritage Girls Troop SC-4224
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://pickenstroops.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Site settings
+author:
+  name: Pickens Troops Webmaster
+  email: traillifesc2244@gmail.com
+
+# Social media
+social:
+  name: Pickens Troops
+  links:
+    - https://traillifesc2244.com
+    - https://ahg4224.com
+
+# Site navigation
+navigation:
+  - title: Trail Life USA
+    url: https://traillifesc2244.com
+  - title: American Heritage Girls
+    url: https://ahg4224.com 
