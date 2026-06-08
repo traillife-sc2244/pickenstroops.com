@@ -1,5 +1,5 @@
 title: Pickens Troops
-description: >- 
+description: >-
   Welcome to Pickens Troops - connecting you to Trail Life USA Troop SC-2244 and American Heritage Girls Troop SC-4224
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://pickenstroops.com" # the base hostname & protocol for your site, e.g. http://example.com
@@ -47,11 +47,11 @@ social:
   name: Pickens Troops
   links:
     - https://traillifesc2244.com
-    - https://ahg4224.com
+    - https://ahgsc4224.com
 
 # Site navigation
 navigation:
   - title: Trail Life USA
     url: https://traillifesc2244.com
   - title: American Heritage Girls
-    url: https://ahg4224.com 
+    url: https://ahgsc4224.com

@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     heroSections.forEach((section, index) => {
         section.style.opacity = '0';
         section.style.transform = 'translateY(20px)';
-        
+
         setTimeout(() => {
             section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
             section.style.opacity = '1';
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
         card.addEventListener('mouseenter', function() {
             this.style.transform = 'translateY(-8px) scale(1.02)';
         });
-        
+
         card.addEventListener('mouseleave', function() {
             this.style.transform = 'translateY(0) scale(1)';
         });
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
             card.style.transform = 'translateY(30px)';
             card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             card.style.transitionDelay = `${index * 0.1}s`;
-            
+
             observer.observe(card);
         });
     }
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
             window.open('https://traillifesc2244.com', '_blank');
         } else if (e.key === 'ArrowRight') {
             // Navigate to American Heritage Girls
-            window.open('https://ahg4224.com', '_blank');
+            window.open('https://ahgsc4224.com', '_blank');
         }
     });
 
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 window.open('https://traillifesc2244.com', '_blank');
             } else {
                 // Swipe right - American Heritage Girls
-                window.open('https://ahg4224.com', '_blank');
+                window.open('https://ahgsc4224.com', '_blank');
             }
         }
     }
@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Preload critical resources
     const preloadLinks = [
         'https://traillifesc2244.com',
-        'https://ahg4224.com'
+        'https://ahgsc4224.com'
     ];
 
     preloadLinks.forEach(url => {
@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function() {
     heroSections.forEach(section => {
         section.addEventListener('click', function(e) {
             const url = this.getAttribute('onclick').match(/'(.*?)'/)[1];
-            
+
             // Try to open the link, fallback to current window if blocked
             try {
                 const newWindow = window.open(url, '_blank');
@@ -165,9 +165,9 @@ document.addEventListener('DOMContentLoaded', function() {
             this.style.outline = '3px solid #3b82f6';
             this.style.outlineOffset = '2px';
         });
-        
+
         element.addEventListener('blur', function() {
             this.style.outline = 'none';
         });
     });
-}); 
+});

@@ -24,10 +24,10 @@ Connecting families to exceptional youth programs in Pickens County, South Carol
 - **Meeting Time:** 1st and 3rd Thursdays at 6:15 PM
 - **Location:** East Pickens Baptist Church
 - **Address:** 2244 Gentry Memorial Hwy, Pickens, SC 29671
-- **Contact:** [Visit Website](https://ahg4224.com)
+- **Contact:** [Visit Website](https://ahgsc4224.com)
 
 ## Get Involved
 
 Both troops meet at the same location and time, making it convenient for families with both boys and girls. Our programs focus on character development, leadership skills, outdoor adventures, and faith-based values.
 
-**Ready to join?** Click on either program above to learn more and get started! 
+**Ready to join?** Click on either program above to learn more and get started!
